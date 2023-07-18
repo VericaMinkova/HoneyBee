@@ -1,0 +1,118 @@
+/* we write in EM not in REM 
+1rem=1em=16px */
+
+/* BELOW 1088px */
+@media (max-width: 68em) {
+  .product-title {
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
+  }
+  .testimonial-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .photo {
+    justify-content: center !important;
+  }
+  .testimonial-text {
+    font-size: 0.5rem;
+  }
+
+  .inside-testimonial {
+    flex-direction: column;
+  }
+
+  .testimonial-img {
+    height: 20%;
+    width: 20%;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-rows: repeat(3, 1fr) !important;
+    gap: 0.2rem;
+  }
+  .gallery img:nth-child(5) {
+    display: inherit !important;
+  }
+
+  .signup-form {
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
+  }
+}
+
+/* BELOW 880px */
+
+@media (max-width: 55em) {
+  .all-products {
+    display: flex !important;
+    flex-direction: column !important;
+    align-content: center !important;
+  }
+
+  .product-1,
+  .product-2,
+  .product-3 {
+    padding-bottom: 3.6rem !important;
+  }
+
+  .testimonial-section {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr !important;
+
+    padding: 0.8rem 2.4rem;
+  }
+
+  .testimonials {
+    grid-row: 2;
+  }
+
+  .testimonial-img {
+    height: 50%;
+    width: 50%;
+  }
+
+  .gallery {
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(4, 1fr) !important;
+    gap: 0.2rem;
+    justify-content: center;
+    justify-items: center;
+    padding: 2.4rem !important;
+  }
+
+  .gallery img:last-child {
+    display: none !important;
+  }
+
+  .address {
+    flex-direction: column;
+  }
+
+  .address-info {
+    justify-content: center;
+  }
+}
+
+/* BELOW 544px */
+
+@media (max-width: 34em) {
+  .face-cust-img {
+    height: 1.8rem !important;
+    width: 1.2rem !important;
+  }
+
+  .address {
+    font-size: 0.8rem;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    gap: 1.2rem !important;
+  }
+} ;
